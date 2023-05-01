@@ -7,14 +7,14 @@ interface CounterProps {
     step: number;
 }
 var Counter = (props: CounterProps) => {
-    var [ count, setCount ] = useState(props.start); // И используем. Значение по умолчанию - 0.
+    var [ count, setCount ] = useState(props.start);
     var handleIncrease = () => {
         setCount(count + props.step);
     };
     return (
         <div>
             <div>Значение счётчика: {count}.</div>
-            <Button text="Прибавить {props.counter}" onClick={handleIncrease}></Button>
+            <Button text = "Прибавить 5"  onClick={handleIncrease}></Button>
         </div>
     );
 };
