@@ -11,10 +11,11 @@ var Counter = (props: CounterProps) => {
     var handleIncrease = () => {
         setCount(count + props.step);
     };
+    var st = "Прибавить " + props.step
     return (
         <div>
             <div>Значение счётчика: {count}.</div>
-            <Button text = "Прибавить 5"  onClick={handleIncrease}></Button>
+            <Button text = {st} onClick={handleIncrease}></Button>
         </div>
     );
 };

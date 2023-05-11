@@ -2,6 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Counter from './Counter';
+import RepInfo from './RepInfo';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
           Edit <code>src/App.tsx</code> and save to reload. Hello world
           <Counter start={10} step={5} />
         </p>
+        <RepInfo/>
         <a
           className="App-link"
           href="https://reactjs.org"
@@ -24,5 +26,7 @@ function App() {
     </div>
   );
 }
+
+//npm run start
 
 export default App;

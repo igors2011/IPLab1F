@@ -9,7 +9,7 @@ interface Repos {
 }
 
 var RepInfo = () => {
-    const [reposes, setReposes] = useState([])
+    const [reposes, setReposes] = useState([]);
     useEffect(() => {
         fetch('https://api.github.com/users/vladdy-moses/repos')
         .then(response => response.json())
@@ -24,7 +24,7 @@ var RepInfo = () => {
         {reposes.map((reposes : Repos) => 
         {
             var tablerow = 
-            <tr>
+            <tr key = {reposes.name}>
                 <td><a href = {reposes.html_url}>{reposes.name}</a></td>
                 <td>{reposes.description}</td>
             </tr>
